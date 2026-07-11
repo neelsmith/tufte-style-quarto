@@ -8,6 +8,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - references.qmd # Adds the bibliography page at the end
 
 bibliography: references.bib
 
@@ -20,10 +21,9 @@ format:
     
   typst:
     toc: true
-    mainfont: "Libertinus Serif" # High-quality academic serif
+    mainfont: "Libertinus Serif"
     fontsize: 11pt
     section-numbering: "1.1"
-    # Overrides the heavy "orange-book" layout with a minimalist baseline
     template-partials: [] 
     margin:
       top: 2.5cm
