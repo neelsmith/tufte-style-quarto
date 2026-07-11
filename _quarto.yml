@@ -1,0 +1,32 @@
+project:
+  type: book
+
+book:
+  title: "Quarto Tufte-Style Demo"
+  author: "Jane Doe"
+  date: "2026-07-10"
+  chapters:
+    - index.qmd
+    - intro.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    css: custom.css
+    toc: true
+    page-layout: article
+    
+  typst:
+    toc: true
+    mainfont: "Libertinus Serif" # High-quality academic serif
+    fontsize: 11pt
+    section-numbering: "1.1"
+    # Overrides the heavy "orange-book" layout with a minimalist baseline
+    template-partials: [] 
+    margin:
+      top: 2.5cm
+      bottom: 2.5cm
+      left: 2.5cm
+      right: 5cm
