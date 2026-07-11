@@ -1,6 +1,18 @@
 # Introduction
 
-This is main body text that spans the standard content width. We can cite a foundational text on data visualization right here in the main flow [@tufte2001]. 
+
+Main body text that spans the standard content width, with space on the exterior side of the page for marginal notes.
+
+## Citing sources
+
+Follow standard Quarto practices to cite bibliography. `_quarto.yml` configures a bibliographic source file with the line `bibliography: references.bib`. Use reference IDs to cite sources. For example, including a citation like `[@tufte2001]` will produce this citation in your text [@tufte2001]. In both HTML and PDF output, citations are linked to full bibliographic information in the [appended bibliography](./references.qmd).
+
+
+
+
+https://quarto.org/docs/authoring/citations.html
+
+
 
 ## Testing the Margin Layout
 

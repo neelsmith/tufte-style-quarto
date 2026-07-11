@@ -1,4 +1,4 @@
-# References {.unnumbered}
+# Bibliographic information for cited sources {.unnumbered}
 
 ::: {#refs}
 :::
