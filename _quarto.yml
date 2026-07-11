@@ -8,9 +8,11 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - references.qmd # Adds the bibliography page at the end
+    - references.qmd
 
 bibliography: references.bib
+# The core Markdown flag that explicitly forces in-text citations to become hyperlinks
+link-citations: true 
 
 format:
   html:
@@ -21,12 +23,22 @@ format:
     
   typst:
     toc: true
+    # Tells Quarto to use Pandoc's core citation engine instead of the raw Typst parser
+    citeproc: true 
     mainfont: "Libertinus Serif"
     fontsize: 11pt
     section-numbering: "1.1"
-    template-partials: [] 
+    # Strips out the default "orange-book" colors and blue blocks natively
+    brand:
+      color:
+        primary: "#000000" 
+    # Sets up your elegant, wide right margin for Tufte-style side commentary
     margin:
       top: 2.5cm
       bottom: 2.5cm
       left: 2.5cm
       right: 5cm
+    include-before-body:
+      - text: |
+          // Keeps your active citation hyperlinks styled in a readable, quiet blue
+          #show link: set text(fill: rgb("#1a5fb4"))
