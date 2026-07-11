@@ -4,11 +4,9 @@ This is main body text that spans the standard content width. We can cite a foun
 
 ## Testing the Margin Layout
 
-To place text or commentary in the margin, we use Quarto's native `.column-margin` div block. 
+This is the first sentence of the paragraph [This is your margin note content that will line up perfectly with the top line of the text block.]{.column-margin} and then the rest of your main text continues seamlessly right here in the editor.
 
-::: {.column-margin}
-**Margin Note:** This text appears in the right-hand margin. We can even put a complete citation here if we want a classic Tufte look: see @allaire2022 for the engine behind this book.
-:::
+
 
 Because we are using explicit margin blocks instead of converting all footnotes to margin notes, actual footnotes will behave completely normally.
 
