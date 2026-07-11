@@ -1,0 +1,5 @@
+# Preface {.unnumbered}
+
+This is a demo book showcasing how to achieve a layout inspired by Edward Tufte using Quarto, outputting to both responsive HTML and high-performance PDF via Typst.
+
+We want side-notes in the margins, but we want to keep traditional footnotes at the bottom and figure captions right where they belong.

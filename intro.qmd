@@ -1,0 +1,25 @@
+# Introduction
+
+This is main body text that spans the standard content width. We can cite a foundational text on data visualization right here in the main flow [@tufte2001]. 
+
+## Testing the Margin Layout
+
+To place text or commentary in the margin, we use Quarto's native `.column-margin` div block. 
+
+::: {.column-margin}
+**Margin Note:** This text appears in the right-hand margin. We can even put a complete citation here if we want a classic Tufte look: see @allaire2022 for the engine behind this book.
+:::
+
+Because we are using explicit margin blocks instead of converting all footnotes to margin notes, actual footnotes will behave completely normally.
+
+## Standard Footnotes and Figures
+
+Here is a sentence that requires a traditional footnote at the bottom of the page[^1]. 
+
+[^1]: See? This footnote stays firmly anchored at the bottom of the page or screen, just like you requested.
+
+Next, let's look at how a figure behaves. We want the caption to remain directly beneath the image rather than floating into the margin.
+
+![A beautiful placeholder image representing structured layouts.](https://neelsmith.quarto.pub/personal/posts/imgs/filled-w-grief.png){#fig-placeholder}
+
+As seen in @fig-placeholder, the figure spans the main text width, and its caption stays cleanly underneath.
