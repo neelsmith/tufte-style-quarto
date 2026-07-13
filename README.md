@@ -3,7 +3,7 @@
 
 This is a simple book project for [Quarto](https://quarto.org/), "an open-source scientific and technical publication system."  It allows you to write straightforward Markdown in a page layout loosely inspired by Edward Tufte and more specifically by Rachel Cockerell's book *Melting Point*. The layout supports side-notes in the margins, but keeps traditional footnotes at the bottom of the page, and figure captions beneath the figures they label. Bibiographic references are resolved using the Bibtex data in a defined local file.
 
-You can use this as a template for writing books in markdown files you list in the `_quarto.yml` configuration. To generate an HTML website and a PDF of the project simultaneously, use standard quarto command `quarto render`. To run a web server with live updates as you edit your markdown files, run `quarto preview index.qmd`.
+You can use this as a template for writing books in markdown files you list in the `_quarto.yml` configuration file. To generate an HTML website and a PDF of the project simultaneously, use the standard quarto command `quarto render`. To run a web server with live updates as you edit your markdown files, run `quarto preview index.qmd`.
 
 
 ## Current documentation
