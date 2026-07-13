@@ -5,7 +5,7 @@ date-format: "long"
 version: "1.0.0"
 
 book:
-  title: "A Quarto book project for Tufte-style layout"
+  title: "A Quarto book project with Tufte-style layout"
   author: "Neel Smith"
 
   page-footer:
@@ -30,13 +30,11 @@ format:
     page-layout: article
     
   pdf:
+    pdf-engine: lualatex  
     toc: true
-    pdf-engine: lualatex
-    fontsize: 11pt
     number-sections: true
-    mainfont: "Georgia" 
-    
-    # Precise Tufte-style layout math for LaTeX
+ 
+    # Precise Tufte-style layout math for LaTeX.
     geometry:
       - top=2.5cm
       - bottom=2.5cm
@@ -46,6 +44,10 @@ format:
       - marginparsep=0.5cm   # The buffer gap between body text and side notes
       
     colorlinks: true
+
+    # Use Georgia as  the main font for the document, with a fallback to an emoji font for emoji characters.
+    fontsize: 11pt    
+    mainfont: "Georgia"
     include-in-header:
       - text: |
           \usepackage{hyperref}
@@ -58,7 +60,7 @@ format:
           \usepackage{fontspec}
           \usepackage{luacode}
           
-          % Define a fallback chain of popular system emoji fonts
+          % Define a fallback chain with a popular system emoji font
           \directlua{
             luaotfload.add_fallback("emojifallback", {
               "Apple Color Emoji:mode=harf;"

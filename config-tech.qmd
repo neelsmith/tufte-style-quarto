@@ -1,5 +1,12 @@
-# Configuration of PDF engine
+# Configuration of visual appearance of HTML and PDF output
 
+
+## HTML formatting
+
+
+HTML output [See Quarto documentation on [HTML themes](https://quarto.org/docs/output-formats/html-themes.html).]{.column-margin} is styled with Quarto's `cosmo` theme. The included file `custom.css` adds settings for the appearance of text in the project's custom `column-margin` class.
+
+## PDF formatting
 
 lualatex
 
