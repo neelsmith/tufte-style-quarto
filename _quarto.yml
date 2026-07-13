@@ -30,7 +30,7 @@ format:
     
   pdf:
     toc: true
-    pdf-engine: xelatex
+    pdf-engine: lualatex
     fontsize: 11pt
     number-sections: true
     mainfont: "Georgia" 
@@ -54,3 +54,15 @@ format:
             citecolor=[rgb]{0.10,0.37,0.70},
             urlcolor=[rgb]{0.10,0.37,0.70}
           }
+          \usepackage{fontspec}
+          \usepackage{luacode}
+          
+          % Define a fallback chain of popular system emoji fonts
+          \directlua{
+            luaotfload.add_fallback("emojifallback", {
+              "Apple Color Emoji:mode=harf;"
+            })
+          }
+          
+          % Bind Georgia to the fallback chain
+          \setmainfont{Georgia}[RawFeature={fallback=emojifallback}]

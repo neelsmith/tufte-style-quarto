@@ -30,13 +30,14 @@ In the HTML rendering, hovering over the footnote marker shows its contents in a
 
 To create a styled labelled figure, use normal Markdown for an embedded image, and add an identifier starting with `#fig-` in curly brackets. The image will span the main text width, with a styled caption placed directly beneath the image.
 
-For example, this Markdown:
+For example, this Markdown produces this output:
 
 ```
-![Opening of letter of Ebenezer White to Nelson White.](https://neelsmith.quarto.pub/personal/posts/imgs/filled-w-grief.png){#fig-ebenezer}
+![Opening of letter of Ebenezer White to Nelson White.]
+(https://neelsmith.quarto.pub/personal/posts/imgs/filled-w-grief.png){#fig-ebenezer}
 ```
 
-produces this output:
+
 
 ![Opening of letter of Ebenezer White to Nelson White.](https://neelsmith.quarto.pub/personal/posts/imgs/filled-w-grief.png){#fig-ebenezer}
 
@@ -47,10 +48,10 @@ Elsewhere in your text, you can cite the image by replacing `#` in the identifie
 
 ## Citing sources
 
-Follow standard Quarto practices to cite bibliography, [See [Quarto documentation on citations](https://quarto.org/docs/authoring/citations.html).]{.column-margin} and cite sources using reference IDs. For example, if the reference ID for your source is `@tufte2001`, you can include a citation like `[@tufte2001]` to produce this citation in your text [@tufte2001]. In both HTML and PDF output, citations are linked to full bibliographic information in the [appended bibliography](./references.qmd).
+Follow standard Quarto practices to cite sources [See [Quarto documentation on citations](https://quarto.org/docs/authoring/citations.html).]{.column-margin}   using reference IDs in a BibTex bibliography. For example, if the reference ID for your source is `@tufte2001`, you can include a citation like `[@tufte2001]` to produce this citation in your text: [@tufte2001]. In both HTML and PDF output, citations are linked to full bibliographic information in the [appended bibliography](./references.qmd).
 
 
-The bibliographic source file is configured in `_quarto.yml` (with the line `bibliography: references.bib`). [💡 **Tip**: if you manage your bibliography with Zotero, you can use the BetterBibTex plugin to automatically update an export of your bibliography to whatever file you configure in `_quarto.yml`.]{.column-margin}
+The [💡 **Tip**: if you manage your bibliography with Zotero, you can use the BetterBibTex plugin to automatically update an export of your bibliography to whatever file you configure in `_quarto.yml`.]{.column-margin} bibliographic source file is configured in `_quarto.yml` (with the line `bibliography: references.bib`). 
 
 
 
