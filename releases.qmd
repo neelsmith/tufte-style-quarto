@@ -1,7 +1,7 @@
 # Released versions {.unnumbered}
 
 
-Current version: **{{< meta version >}}**
+Current version: **{{< meta version >}}**, **{{< meta date >}}**.
 
 ## Version history
 

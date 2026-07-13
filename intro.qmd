@@ -1,4 +1,4 @@
-# Introduction
+# How to use this template project
 
 
 Write your Markdown as you would in any other Quarto project. Main body text looks like this paragraph: it spans the standard content width, leaving space on the exterior side of the page for marginal notes in both HTML and PDF output.
@@ -68,3 +68,6 @@ produces this:
 
 > A **paragraph** [The content of your **marginal note**.]{.column-margin} with an aligned marginal note. The paragraph text continues to flow normally in the main text block.
 
+## Version information and project metadata
+
+The configuration in `_quarto.yml` defines variables for `version` and `date`. It 

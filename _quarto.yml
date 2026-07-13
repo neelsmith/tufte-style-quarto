@@ -11,12 +11,12 @@ book:
   page-footer:
     left: "© 2026 Neel Smith"
     right: "Version **{{< meta version >}}**,  {{< meta date >}}"
-    
+
   chapters:
-    - releases.qmd
     - index.qmd
     - intro.qmd
     - references.qmd
+    - releases.qmd
 
 bibliography: references.bib
 link-citations: true 
