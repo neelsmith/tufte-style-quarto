@@ -1,0 +1,132 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A Quarto book project with Tufte-style layout",
+    "section": "",
+    "text": "Overview\nThis is a simple book project allowing you to write straighforward Markdown and achieve a layout loosely inspired by Edward Tufte and more specifically by Rachel Cockerell’s book Melting Point. It uses Quarto to render output to both responsive HTML and PDF via Latex. The layout supports side-notes in the margins, but keeps traditional footnotes at the bottom of the page, and figure captions beneath the figures they label. Bibiographic references are resolved using the Bibtex data in a defined local file.Download and see documentation for Quarto, “an open-source scientific and technical publication system.”\nSimultaneously generate an HTML website and a PDF of the project with the standard quarto commands quarto render or quarto render --to all.\nThe following figure is a screen grab illustrating Rachel Cockerell’s page layout.Find out more about Melting Point on Rachel Cockerell’s professional website.\n\n\n\n\n\n\nFigure 1: Sample page from Melting Point.\n\n\n\nThe next page demonstrates how to make your Markdown text work with this design.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  How to use this template project",
+    "section": "",
+    "text": "1.1 Footnotes\nWrite your Markdown as you would in any other Quarto project. Text in the main body looks like this paragraph. In both HTML and PDF output, it spans the standard content width, leaving space on the exterior side of the page for marginal notes .\nTo place a footnote in your text, create an identifier using squarebrackets with a caret; start a line with the same identifier and a colon to write the content of the footnote. This markup:\nproduces this output:\nIn the HTML rendering, hovering over the footnote marker shows its contents in a floating box. In both HTML and PDF renderings, the footnote is placed at the bottom of the page.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How to use this template project</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#footnotes",
+    "href": "intro.html#footnotes",
+    "title": "1  How to use this template project",
+    "section": "",
+    "text": "Footnote content.↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How to use this template project</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#labelled-figures",
+    "href": "intro.html#labelled-figures",
+    "title": "1  How to use this template project",
+    "section": "1.2 Labelled figures",
+    "text": "1.2 Labelled figures\nTo create a styled labelled figure, use normal Markdown for an embedded image, and add an identifier starting with #fig- in curly brackets. The image will span the main text width, with a styled caption placed directly beneath the image.\nFor example, this Markdown produces this output:\n![Opening of letter of Ebenezer White to Nelson White.]\n(https://neelsmith.quarto.pub/personal/posts/imgs/filled-w-grief.png){#fig-ebenezer}\n\n\n\n\n\n\nFigure 1.1: Opening of letter of Ebenezer White to Nelson White.\n\n\n\nElsewhere in your text, you can cite the image by replacing # in the identifier with @ to embed a properly labelled link. In this example, embedding the citation @fig-ebenezer produces this labelled link: Figure 1.1. In the HTML version, hovering over the link displays a small image of the figure in a floating panel.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How to use this template project</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#citing-sources",
+    "href": "intro.html#citing-sources",
+    "title": "1  How to use this template project",
+    "section": "1.3 Citing sources",
+    "text": "1.3 Citing sources\nFollow standard Quarto practices to cite sources  using reference IDs in a BibTex bibliography. For example, if the reference ID for your source is @tufte2001, you can include a citation like [@tufte2001] to produce this citation in your text: (Tufte 2001). In both HTML and PDF output, citations are linked to full bibliographic information in the appended bibliography.See Quarto documentation on citations.\nThe  bibliographic source file is configured in _quarto.yml (with the line bibliography: references.bib).💡 Tip: if you manage your bibliography with Zotero, you can use the BetterBibTex plugin to automatically update an export of your bibliography to whatever file you configure in _quarto.yml.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How to use this template project</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#adding-marginal-notes",
+    "href": "intro.html#adding-marginal-notes",
+    "title": "1  How to use this template project",
+    "section": "1.4 Adding marginal notes",
+    "text": "1.4 Adding marginal notes\nThis project’s configuration defines a column-margin class that lets you add marginal notes. Place the note in square brackets followed by {.column-margin}. To align the note horizontally with a specific passage of the main body text, embed the note in the text at the point you want it to align with. For example, this markup:\nA **paragraph** [The content of your **marginal note**.]{.column-margin} \nwith an aligned marginal note. The paragraph text \ncontinues to flow normally in the main text block.\nproduces this:\n\nA paragraph  with an aligned marginal note. The paragraph text continues to flow normally in the main text block.The content of your marginal note.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How to use this template project</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#version-information-and-project-metadata",
+    "href": "intro.html#version-information-and-project-metadata",
+    "title": "1  How to use this template project",
+    "section": "1.5 Version information and project metadata",
+    "text": "1.5 Version information and project metadata\nThe configuration in _quarto.yml defines variables for version and date, and uses them in a footer for HTML pages. The same variables are used in the file releases.qmd to display the current version and date at the top of a history of releases.\nThe following section documents the technical configuration of HTML and PDF rendering in _quarto.yml.\n\n\n\n\nTufte, Edward R. 2001. The Visual Display of Quantitative Information. Graphics Press.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How to use this template project</span>"
+    ]
+  },
+  {
+    "objectID": "config-tech.html",
+    "href": "config-tech.html",
+    "title": "2  Configuration of visual appearance of HTML and PDF output",
+    "section": "",
+    "text": "2.1 HTML formatting",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Configuration of visual appearance of HTML and PDF output</span>"
+    ]
+  },
+  {
+    "objectID": "config-tech.html#html-formatting",
+    "href": "config-tech.html#html-formatting",
+    "title": "2  Configuration of visual appearance of HTML and PDF output",
+    "section": "",
+    "text": "HTML output  is styled with Quarto’s cosmo theme. The included file custom.css adds settings for the appearance of text in the project’s custom column-margin class.See Quarto documentation on HTML themes.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Configuration of visual appearance of HTML and PDF output</span>"
+    ]
+  },
+  {
+    "objectID": "config-tech.html#pdf-formatting",
+    "href": "config-tech.html#pdf-formatting",
+    "title": "2  Configuration of visual appearance of HTML and PDF output",
+    "section": "2.2 PDF formatting",
+    "text": "2.2 PDF formatting\nPDFs  are rendered with the lualatex engine. The YAML geometry property defines borders and spacing of the main content areas in centimeters.See Quarto documentation on PDF configuration.\nWith the include-in-header property, the configuration injects some LaTex into the output pipeline. This code sets up the LaTex hyperref package to create live links from citations in the PDF file, and defines a fallback chain for fonts. The main font is set to Georgia, falling back to Apple Color Emoji for missing characters.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Configuration of visual appearance of HTML and PDF output</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Bibliographic information for cited sources",
+    "section": "",
+    "text": "Tufte, Edward R. 2001. The Visual Display of Quantitative\nInformation. Graphics Press.",
+    "crumbs": [
+      "Bibliographic information for cited sources"
+    ]
+  },
+  {
+    "objectID": "releases.html",
+    "href": "releases.html",
+    "title": "Released versions",
+    "section": "",
+    "text": "Version history\nCurrent version: 1.0.0, July 13, 2026.",
+    "crumbs": [
+      "Released versions"
+    ]
+  },
+  {
+    "objectID": "releases.html#version-history",
+    "href": "releases.html#version-history",
+    "title": "Released versions",
+    "section": "",
+    "text": "1.0.0: July 13, 2026. Initial release with the project-specific column-margin class for layout of marginal notes. Documentation includes examples illustrating marginal notes, as well as support for the standard Quarto features for footnotes, labelled figures, and bibliographic citations. Brief documentation explains the configuration of the font chain used in producing PDFs.",
+    "crumbs": [
+      "Released versions"
+    ]
+  }
+]
