@@ -70,4 +70,4 @@ produces this:
 
 ## Version information and project metadata
 
-The configuration in `_quarto.yml` defines variables for `version` and `date`. It 
+The configuration in `_quarto.yml` defines variables for `version` and `date`, and using them in a footer for HTML pages. The same variables are used in the file `releases.qmd`.
