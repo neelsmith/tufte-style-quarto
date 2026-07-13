@@ -1,28 +1,53 @@
 # Introduction
 
 
-Write your Markdown as you would any other Quarto project. Main body text looks like this paragraph: it spans the standard content width, leaving space on the exterior side of the page for marginal notes.
+Write your Markdown as you would in any other Quarto project. Main body text looks like this paragraph: it spans the standard content width, leaving space on the exterior side of the page for marginal notes in both HTML and PDF output.
 
 
+All of Quarto's normal features for technical writing [*See Quarto documentation on [supported Markdown](https://quarto.org/docs/authoring/markdown-basics.html#footnotes).*]{.column-margin}, such as footnotes and indexed labelled figures, are available .
+
+## Footnotes
+
+To place a footnote in your text, create an identifier using squarebrackets with a caret; start a line with the same identifier and a colon to write the content of the footnote. This markup:
+
+```
+Main body content.[^fn]
+
+[^fn]: Footnote content.
+```
+
+produces this output:
+
+> Main body content.[^fn]
+
+[^fn]: Footnote content.
 
 
-## Technical writing
+In the HTML rendering, hovering over the footnote marker shows its contents in a floating box. In both HTML and PDF renderings, the footnote is placed at the bottom of the page.
 
-All of Quarto's normal features  [*See* Quarto documentation on [technical writing](https://quarto.org/docs/visual-editor/technical.html).]{.column-margin} are available for technical writing.
-Here is a sentence that requires a traditional footnote at the bottom of the page[^1]. 
 
-[^1]: See? This footnote stays firmly anchored at the bottom of the page or screen, just like you requested.
+## Labelled figures
 
-Next, let's look at how a figure behaves. We want the caption to remain directly beneath the image rather than floating into the margin.
+To create a styled labelled figure, use normal Markdown for an embedded image, with added identifier starting with `#fig-` in curly brackets. The image will span the main text width, with a styled captions placed directly beneath the image.
 
-![A beautiful placeholder image representing structured layouts.](https://neelsmith.quarto.pub/personal/posts/imgs/filled-w-grief.png){#fig-placeholder}
+For example, this Markdown:
 
-As seen in @fig-placeholder, the figure spans the main text width, and its caption stays cleanly underneath.
+```
+![Opening of letter of Ebenezer White to Nelson White.](https://neelsmith.quarto.pub/personal/posts/imgs/filled-w-grief.png){#fig-ebenezer}
+```
+
+produces this output:
+
+![Opening of letter of Ebenezer White to Nelson White.](https://neelsmith.quarto.pub/personal/posts/imgs/filled-w-grief.png){#fig-ebenezer}
+
+Elsewhere in your text, cite the image by replacing `#`  in the identifier with `@` to embed a properly labelled link. In this example, embedding the citation `@fig-ebenezer` produces this labelled link: @fig-ebenezer. In the HTML version, hovering over the link displays a small image of the figure in a floating panel.
+
+
 
 
 ## Citing sources
 
-Follow standard Quarto practices to cite bibliography.[*See* [Quarto documentation on citations](https://quarto.org/docs/authoring/citations.html).]{.column-margin} `_quarto.yml` configures a bibliographic source file with the line `bibliography: references.bib`. Use reference IDs to cite sources. For example, including a citation like `[@tufte2001]` will produce this citation in your text [@tufte2001]. In both HTML and PDF output, citations are linked to full bibliographic information in the [appended bibliography](./references.qmd).
+Follow standard Quarto practices to cite bibliography.[*See [Quarto documentation on citations](https://quarto.org/docs/authoring/citations.html)*.]{.column-margin} `_quarto.yml` configures a bibliographic source file (in the line `bibliography: references.bib`). Use reference IDs to cite sources. For example, including a citation like `[@tufte2001]` will produce this citation in your text [@tufte2001]. In both HTML and PDF output, citations are linked to full bibliographic information in the [appended bibliography](./references.qmd).
 
 
 
@@ -30,12 +55,12 @@ Follow standard Quarto practices to cite bibliography.[*See* [Quarto documentati
 
 ## Adding marginal notes
 
-This project's configuration lets you add marginal notes in a `column-margin` class. Place the note in square brackets followed by `{.column-margin}`. To align the note horizontally with a specific passage of the main body text, embed the note in the text at the point you want it to align with. For example, this markup:
+This project's configuration adds a `column-margin` class that lets you add marginal notes. Place the note in square brackets followed by `{.column-margin}`. To align the note horizontally with a specific passage of the main body text, embed the note in the text at the point you want it to align with. For example, this markup:
 
 ```
-A paragraph [The content of your **marginal note**.]{.column-margin} 
+A **paragraph** [The content of your **marginal note**.]{.column-margin} 
 with an aligned marginal note. The paragraph text 
-continues to flow normally in the main text block
+continues to flow normally in the main text block.
 ```
 
 
