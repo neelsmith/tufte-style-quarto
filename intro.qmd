@@ -58,7 +58,7 @@ The [💡 **Tip**: if you manage your bibliography with Zotero, you can use the 
 
 ## Adding marginal notes
 
-This project's configuration adds a `column-margin` class that lets you add marginal notes. Place the note in square brackets followed by `{.column-margin}`. To align the note horizontally with a specific passage of the main body text, embed the note in the text at the point you want it to align with. For example, this markup:
+This project's configuration defines a `column-margin` class that lets you add marginal notes. Place the note in square brackets followed by `{.column-margin}`. To align the note horizontally with a specific passage of the main body text, embed the note in the text at the point you want it to align with. For example, this markup:
 
 ```
 A **paragraph** [The content of your **marginal note**.]{.column-margin} 
@@ -74,3 +74,5 @@ produces this:
 ## Version information and project metadata
 
 The configuration in `_quarto.yml` defines variables for `version` and `date`, and uses them in a footer for HTML pages. The same variables are used in the file [`releases.qmd`](./releases.qmd) to display the current version and date at the top of a history of releases.
+
+The [following section](./config-tech.qmd) documents the technical configuration of HTML and PDF rendering in `_quarto.yml`.

@@ -1,7 +1,7 @@
 # Overview {.unnumbered}
 
 This is a simple book project[[Download and see documentation for Quarto](https://quarto.org/), "an open-source scientific and technical publication system." ]{.column-margin} 
- allowing you to write straighforward Markdown and achieve a layout loosely inspired by Edward Tufte and more specifically by Rachel Cockerell's book *Melting Point*. It uses Quarto to render output to both responsive HTML and high-performance PDF via Latex.
+ allowing you to write straighforward Markdown and achieve a layout loosely inspired by Edward Tufte and more specifically by Rachel Cockerell's book *Melting Point*. It uses Quarto to render output to both responsive HTML and PDF via Latex.
 The layout supports side-notes in the margins, but keeps traditional footnotes at the bottom of the page, and figure captions beneath the figures they label. Bibiographic references are resolved using the Bibtex data in a defined local file.
 
 Simultaneously generate an HTML website and a PDF of the project with the standard quarto commands `quarto render` or `quarto render --to all`.

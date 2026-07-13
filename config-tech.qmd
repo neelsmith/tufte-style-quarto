@@ -8,8 +8,6 @@ HTML output [See Quarto documentation on [HTML themes](https://quarto.org/docs/o
 
 ## PDF formatting
 
-lualatex
+PDFs [See Quarto documentation on [PDF configuration](https://quarto.org/docs/output-formats/pdf-basics.html).]{.column-margin}  are rendered with the `lualatex` engine. The YAML `geometry` property defines borders and spacing of the main content areas in centimeters.
 
-font fallback chain
-
-Apple emoji font
+With the `include-in-header` property, the configuration injects some LaTex into the output pipeline. This code sets up the LaTex `hyperref` package to create live links from citations in the PDF file, and defines a fallback chain for fonts. The main font is set to `Georgia`, falling back to `Apple Color Emoji` for missing characters.

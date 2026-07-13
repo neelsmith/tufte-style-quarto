@@ -45,9 +45,8 @@ format:
       
     colorlinks: true
 
-    # Use Georgia as  the main font for the document, with a fallback to an emoji font for emoji characters.
     fontsize: 11pt    
-    mainfont: "Georgia"
+    # Incuded Latex to set Georgia as the main font for the document, with a fallback to an emoji font for emoji characters.
     include-in-header:
       - text: |
           \usepackage{hyperref}
