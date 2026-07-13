@@ -1,11 +1,19 @@
 project:
   type: book
+date: today
+date-format: "long"
+version: "1.0.0"
 
 book:
-  title: "Quarto Tufte-Style Demo"
-  author: "Jane Doe"
-  date: "2026-07-10"
+  title: "A Quarto book project for Tufte-style layout"
+  author: "Neel Smith"
+
+  page-footer:
+    left: "© 2026 Neel Smith"
+    right: "Version **{{< meta version >}}**,  {{< meta date >}}"
+    
   chapters:
+    - releases.qmd
     - index.qmd
     - intro.qmd
     - references.qmd

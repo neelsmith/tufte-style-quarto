@@ -1,7 +1,8 @@
-# Preface {.unnumbered}
+# Overview {.unnumbered}
 
-This is a model of a simple book project allowing you to write straighforward Markdown and achieve a layout inspired by Edward Tufte and by Rachel Cockerell's book *Melting Point*. It uses [Quarto](https://quarto.org/) to render output to both responsive HTML and high-performance PDF via Latex.
+This is simple book project allowing you to write straighforward Markdown and achieve a layout loosely inspired by Edward Tufte and more specifically by Rachel Cockerell's book *Melting Point*. It uses [Quarto](https://quarto.org/) to render output to both responsive HTML and high-performance PDF via Latex.
 
-It supports side-notes in the margins, but keeps traditional footnotes at the bottom of the page, and figure captions beneath the figures they label. Bibiographic references are resolved using the Bibtex data in the file `references.bib`.
+It supports side-notes in the margins, but keeps traditional footnotes at the bottom of the page, and figure captions beneath the figures they label. Bibiographic references are resolved using the Bibtex data in a defined local file.
+
 
 The [next page](./intro.qmd) demonstrates how to make your Markdown text work with this design.
