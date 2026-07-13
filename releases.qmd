@@ -5,4 +5,4 @@ Current version: **{{< meta version >}}**, **{{< meta date >}}**.
 
 ## Version history
 
-- **1.0.0**: July 13, 2026. Initial release, with examples documenting the project-specific `column-margin` class, as well as support for the standard Quarto features for footnotes, labelled figures, and bibliographic citations.
+- **1.0.0**: July 13, 2026. Initial release with the project-specific `column-margin` class for layout of marginal notes. Documentation includes examples illustrating marginal notes, as well as support for the standard Quarto features for footnotes, labelled figures, and bibliographic citations. Brief documentation explains the configuration of the font chain used in producing PDFs.

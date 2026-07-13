@@ -1,0 +1,8 @@
+# Configuration of PDF engine
+
+
+lualatex
+
+font fallback chain
+
+Apple emoji font
