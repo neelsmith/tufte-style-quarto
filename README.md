@@ -10,4 +10,4 @@ You can use this as a template for writing books in markdown files you list in t
 
 
 - on [github pages](https://neelsmith.github.io/tufte-style-quarto/).
-- as [a PDF](https://github.com/neelsmith/tufte-style-quarto/blob/main/A-Quarto-book-project-with-Tufte-style-layout.pdf?raw=true)
+- as [a PDF]([https://github.com/neelsmith/tufte-style-quarto/blob/main/A-Quarto-book-project-with-Tufte-style-layout.pdf?raw=true](https://github.com/neelsmith/tufte-style-quarto/blob/main/A-Quarto-book-project-with-Tufte-style-layout.pdf))
